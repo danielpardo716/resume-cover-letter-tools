@@ -1,0 +1,47 @@
+Name: John Smith
+Title: Software Engineer
+Contact:
+  Email: johnsmith@gmail.com
+  Phone: +1-234-567-8901
+  LinkedIn: https://www.linkedin.com/in/johnsmith
+  GitHub: johnsmith
+Education:
+  - Degree: Bachelor of Science in Computer Science
+    Institution: University of Technology
+    Start: August 2018
+    End: May 2022
+Experience:
+  - Job Title: Software Engineer Intern
+    Company: Tech Innovations Inc.
+    Start: June 2021
+    End: August 2021
+    Responsibilities:
+      - Developed a web application using React and Node.js.
+      - Collaborated with a team of developers to enhance user experience.
+      - Participated in code reviews and contributed to project documentation.
+  - Job Title: Junior Software Developer
+    Company: Code Solutions Ltd.
+    Start: June 2022
+    End: Present
+    Responsibilities:
+      - Implemented new features for the company's flagship product.
+      - Optimized existing codebase for performance improvements.
+      - Assisted in debugging and troubleshooting software issues.
+Skills:
+  - Programming Languages: Python, JavaScript, Java
+  - Frameworks: React, Node.js, Django
+  - Tools: Git, Docker, Jenkins
+Honors:
+  - Award: Dean's List
+    Institution: University of Technology
+    Year: 2020
+  - Award: Best Project Award
+    Event: Annual Tech Fair
+    Year: 2021
+Projects:
+  - Name: Personal Portfolio Website
+    Description: Developed a personal portfolio website to showcase projects and skills.
+    Technologies: HTML, CSS, JavaScript
+  - Name: Task Management App
+    Description: Created a task management application to help users organize their tasks.
+    Technologies: React, Node.js, MongoDB
