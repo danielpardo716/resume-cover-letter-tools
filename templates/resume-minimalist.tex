@@ -160,132 +160,82 @@
     \sbox\ANDbox{$|$}
 
     \begin{header}
-        \fontsize{25 pt}{25 pt}\selectfont Daniel Pardo
+        \fontsize{25 pt}{25 pt}\selectfont <VAR>Contact.Name</VAR>
 
         \vspace{5 pt}
 
         \normalsize
-        \mbox{Buffalo, NY}%
+        \mbox{<VAR>Contact.Location</VAR>}
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{mailto:dpardo25@proton.me}{dpardo25@proton.me}}%
+        \mbox{\hrefWithoutArrow{mailto:<VAR>Contact.Email</VAR>}{<VAR>Contact.Email</VAR>}}
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{tel:+1-716-263-2250}{(716) 263-3350}}%
+        \mbox{\hrefWithoutArrow{tel:<VAR>Contact.Phone</VAR>}{<VAR>Contact.Phone</VAR>}}
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://linkedin.com/in/danielpardo716}{linkedin.com/in/danielpardo716}}%
+        \mbox{\hrefWithoutArrow{https://linkedin.com/in/<VAR>Contact.Linkedin</VAR>}{linkedin.com/in/<VAR>Contact.Linkedin</VAR>}}%
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://github.com/danielpardo716}{github.com/danielpardo716}}%
+        \mbox{\hrefWithoutArrow{https://github.com/<VAR>Contact.Github</VAR>}{github.com/<VAR>Contact.Github</VAR>}}%
     \end{header}
 
     \vspace{5 pt - 0.3 cm}
 
     \section{Education}
-        \begin{twocolentry}{August 2018 - May 2022}
-            \textbf{SUNY University at Buffalo}, Bachelors of Science, Electrical Engineering
-        \end{twocolentry}
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item GPA: 3.9
-                \item Treasurer, UBRobotics
-                \item Scholar, University Honors College
-            \end{highlights}
-        \end{onecolentry}
+    <BLOCK> for education in Education </BLOCK>
+    \begin{twocolentry}{<VAR>education.Start</VAR> - <VAR>education.End</VAR>}
+        \textbf{<VAR>education.Institution</VAR>}, <VAR>education.Degree</VAR>, <VAR>education.Major</VAR>
+    \end{twocolentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+        <BLOCK> for highlight in education.Highlights </BLOCK>
+            \item <VAR>highlight</VAR>
+        <BLOCK> endfor </BLOCK>
+        \end{highlights}
+    \end{onecolentry}
+    \vspace{0.2 cm}
+    <BLOCK> endfor </BLOCK>
+
+    \vspace{0.2 cm}
 
     \section{Experience}
-        \begin{twocolentry}{June 2005 – Aug 2007}
-            \textbf{Software Engineer}, Apple -- Cupertino, CA
-        \end{twocolentry}
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Reduced time to render user buddy lists by 75\% by implementing a prediction algorithm
-                \item Integrated iChat with Spotlight Search by creating a tool to extract metadata from saved chat transcripts and provide metadata to a system-wide search database
-                \item Redesigned chat file format and implemented backward compatibility for search
-            \end{highlights}
-        \end{onecolentry}
+    <BLOCK> for experience in Experience </BLOCK>
+    \begin{twocolentry}{<VAR>experience.Start</VAR> - <VAR>experience.End</VAR>}
+        \textbf{<VAR>experience.Title</VAR>}, <VAR>experience.Company</VAR> - <VAR>experience.Location</VAR>
+    \end{twocolentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+        <BLOCK> for responsibility in experience.Responsibilities </BLOCK>
+            \item <VAR>responsibility</VAR>
+        <BLOCK> endfor </BLOCK>
+        \end{highlights}
+    \end{onecolentry}
+    \vspace{0.2 cm}
+    <BLOCK> endfor </BLOCK>
 
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            June 2003 – Aug 2003
-        }
-            \textbf{Software Engineer Intern}, Microsoft -- Redmond, WA\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Designed a UI for the VS open file switcher (Ctrl-Tab) and extended it to tool windows
-                \item Created a service to provide gradient across VS and VS add-ins, optimizing its performance via caching
-                \item Built an app to compute the similarity of all methods in a codebase, reducing the time from $\mathcal{O}(n^2)$ to $\mathcal{O}(n \log n)$
-                \item Created a test case generation tool that creates random XML docs from XML Schema
-                \item Automated the extraction and processing of large datasets from legacy systems using SQL and Perl scripts
-            \end{highlights}
-        \end{onecolentry}
+    \vspace{0.2 cm}
 
     \section{Skills}
+    <BLOCK> for skill in Skills </BLOCK>
         \begin{onecolentry}
-            \textbf{Languages:} C++, C, Java, Objective-C, C\#, SQL, JavaScript
+            <VAR>skill | latex_escape </VAR>
         \end{onecolentry}
-
         \vspace{0.2 cm}
-
-        \begin{onecolentry}
-            \textbf{Technologies:} .NET, Microsoft SQL Server, XCode, Interface Builder
-        \end{onecolentry}   
+    <BLOCK> endfor </BLOCK>
     
     \section{Projects}
-
-        \begin{twocolentry}{
-            \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-        }
-            \textbf{Multi-User Drawing Tool}\end{twocolentry}
-
-        \vspace{0.10 cm}
+    <BLOCK> for project in Projects </BLOCK>
         \begin{onecolentry}
-            \begin{highlights}
-                \item Developed an electronic classroom where multiple users can simultaneously view and draw on a "chalkboard" with each person's edits synchronized
-                \item Tools Used: C++, MFC
-            \end{highlights}
+            <VAR>project.Name</VAR>: <VAR>project.Description</VAR>
         \end{onecolentry}
-
-
         \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-        }
-            \textbf{Synchronized Desktop Calendar}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Developed a desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users
-                \item Tools Used: C\#, .NET, SQL, XML
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            2002
-        }
-            \textbf{Custom Operating System}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Built a UNIX-style OS with a scheduler, file system, text editor, and calculator
-                \item Tools Used: C
-            \end{highlights}
-        \end{onecolentry} 
+    <BLOCK> endfor </BLOCK>
 
 \end{document}
