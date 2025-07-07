@@ -76,9 +76,9 @@ Projects:
     Description: Created a Swift application for iOS that visualized the user's sensor data along with compass and level features.
   - Name: FPGA Audio Player
     Description: Interfaced with the FPGA of a Zybo Z7 development board to take in audio from a microphone and apply distortion and compression effects.
-  - Name: Wearable Health Monitor
-    Description: Developed a self-contained wrist-mounted health monitor to display heart rate, pulse oximetry, and step count using an Arduino Nano.
-  - Name: Donkey Kong Embedded Game
-    Description: Recreated the classic arcade game Donkey Kong using C code running on an embedded Xilinx Zybo Z7 development board and an LCD display.
-  - Name: WiFi LED String Lights
-    Description: Utilized the Blynk IoT platform to control a string of 200 individually addressable RGB lights with a NodeMCU ESP-12E Module.
+  # - Name: Wearable Health Monitor
+  #   Description: Developed a self-contained wrist-mounted health monitor to display heart rate, pulse oximetry, and step count using an Arduino Nano.
+  # - Name: Donkey Kong Embedded Game
+  #   Description: Recreated the classic arcade game Donkey Kong using C code running on an embedded Xilinx Zybo Z7 development board and an LCD display.
+  # - Name: WiFi LED String Lights
+  #   Description: Utilized the Blynk IoT platform to control a string of 200 individually addressable RGB lights with a NodeMCU ESP-12E Module.

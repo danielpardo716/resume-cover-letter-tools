@@ -55,11 +55,11 @@ def build_latex(data, template_file: str, output_file: str):
     with open(output_path, 'w') as file:
         file.write(resume_text)
 
-
 def main():
     resume_data = load_yaml('examples/resume-full.yaml')
-    build_resume(resume_data, 'resume-plaintext.txt', 'resume-plaintext-out.txt')
-    build_latex(resume_data, 'resume-minimalist.tex', 'resume-minimalist-out.tex')
+    build_resume(resume_data, 'resume-plaintext.txt.jinja2', 'resume-plaintext.txt')
+    build_latex(resume_data, 'resume-minimalist.tex.jinja2', 'resume-minimalist.tex')
+    build_latex(resume_data, 'resume-two-column.tex.jinja2', 'resume-two-column.tex')
 
 if __name__ == "__main__":
     main()
