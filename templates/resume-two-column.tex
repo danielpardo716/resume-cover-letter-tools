@@ -1,0 +1,182 @@
+% https://www.overleaf.com/latex/templates/john-miller-cv/djrtsjfvqmnq
+%
+% !TeX spellcheck = en_GB
+% !TeX program = pdflatex
+%
+% LuxSleek-CV 1.1 LaTeX template
+% Author: Andreï V. Kostyrka, University of Luxembourg
+%
+% 1.1: added tracking and letter-spacing for prettier lower caps, added `~` for language levels
+% 1.0: initial release
+%
+% This template fills the gap in the available variety of templates
+% by proposing something that is not a custom class, not using any
+% hard-coded settings deeply hidden in style files, and provides
+% a handful of custom command definitions that are as transparent as it gets.
+% Developed at the University of Luxembourg.
+%
+% *NOTHING IS HARCODED, and never should be.*
+%
+% Target audience: applicants in the IT industry, or business in general
+%
+% The main strength of this template is, it explicitly showcases how
+% to break the flow of text to achieve the most flexible right alignment
+% of dates for multiple configurations.
+
+\documentclass[11pt, a4paper]{article} 
+
+\usepackage[T1]{fontenc}     % We are using pdfLaTeX,
+\usepackage[utf8]{inputenc}  % hence this preparation
+\usepackage[british]{babel}  
+\usepackage[left = 0mm, right = 0mm, top = 0mm, bottom = 0mm]{geometry}
+\usepackage[stretch = 25, shrink = 25, tracking=true, letterspace=30]{microtype}
+\usepackage{xcolor}          % To add colour to the document
+\usepackage{fontawesome5}    % Provides icons for the contact details
+\usepackage{enumitem}        % To redefine spacing in lists
+\setlist{parsep = 0pt, topsep = 0pt, partopsep = 1pt, itemsep = 1pt, leftmargin = 6mm}
+
+\usepackage{array}
+\usepackage{noto}        % Change this to use any font, but keep it simple
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{cvblue}{HTML}{304263}
+
+%%%%%%% USER COMMAND DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% These are the real workhorses of this template
+\newcommand{\dates}[1]{\hfill\mbox{\textbf{#1}}} % Bold stuff that doesn’t got broken into lines
+\newcommand{\smaller}[1]{{\small$\diamond$\ #1}}
+\newcommand{\headleft}[1]{\vspace*{2.5ex}\textsc{\Large\color{white}#1}\par
+    \vspace*{-1ex}{\color{white}\hrulefill}\par}
+\newcommand{\headright}[1]{\vspace*{2.5ex}\textsc{\Large\color{cvblue}#1}\par
+     \vspace*{-2ex}{\color{cvblue}\hrulefill}\par}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{hyperref}
+
+\begin{document}
+
+% Style definitions -- killing the unnecessary space and adding the skips explicitly
+\setlength{\topskip}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\fboxsep}{0pt}
+\pagestyle{empty}
+\raggedbottom
+
+\begin{minipage}[t]{0.33\textwidth}                                                         % Left column -- outer definition
+\colorbox{cvblue}{\begin{minipage}[t][5mm][t]{\textwidth}\null\hfill\null\end{minipage}}    % Left column -- top dark rectangle
+
+\vspace{-.2ex} % Eliminates the small gap
+\colorbox{cvblue!90}{\color{white}  %% LEFT BOX
+\kern0.09\textwidth\relax% Left margin provided explicitly
+\begin{minipage}[t][293mm][t]{0.82\textwidth}
+\raggedright
+\vspace*{2.5ex}
+
+\Huge\textbf{Daniel Pardo} \\[0.5ex]
+\Large\textit{Embedded Software Engineer}
+\normalsize
+
+\vspace*{0.5ex} % Extra space after the picture
+
+\headleft{Contact}
+\vspace{0.5ex}
+\begin{tabular}{l l}
+    \faIcon{map-marker-alt} & Buffalo, NY \\
+    \faIcon{envelope} & \href{mailto:dpardo25@proton.me}{dpardo25@proton.me} \\
+    \faIcon{phone-alt} & +1 (716) 263-3350 \\
+    \faIcon{linkedin-in} & \href{www.linkedin.com/in/danielpardo716}{danielpardo716} \\
+    \faIcon{github} & \href{https://github.com/danielpardo716}{danielpardo716} \\
+\end{tabular}
+
+\headleft{Education}
+\textbf{SUNY University at Buffalo} \\
+\textit{Masters of Science},\\
+Electrical Engineering \\
+\begin{itemize}
+    \item Graduated May 2023
+    \item GPA: 4.00
+\end{itemize}
+\textit{Bachelors of Science},\\
+Electrical Engineering \\
+\begin{itemize}
+    \item Graduated May 2022
+    \item GPA: 3.98
+    \item Dean's List (Spring 2019 - Fall~2021)
+    \item Treasurer, \textit{UBRobotics}
+    \item Scholar, \textit{University Honors College}
+\end{itemize}
+
+\headleft{Skills}
+\begin{itemize}
+\item \textbf{Languages:} C/C++, C\#, Python, MATLAB
+\item \textbf{Embedded:} Serial protocols, FreeRTOS, EtherCAT, unit testing, debugging, soldering
+\item \textbf{Development:} Git, Jira, Linux, Meson, Docker
+\item \textbf{Soft skills:} Problem solving, communication, teamwork
+\end{itemize}
+
+\headleft{Honors}
+\begin{itemize}
+    \item Member, \textit{Tau Beta Pi}
+    \item Grace W. Capen Academic Award
+    \item George F. Schenk Scholarship
+    \item Pride of New York Scholarship
+    \item Presidential Scholarship, \textit{Engineering Society of Buffalo} 
+\end{itemize}
+
+\end{minipage}%
+\kern0.09\textwidth\relax%%Right margin provided explicitly to stretch the colourbox
+}
+\end{minipage}% Right column
+\hskip2.5em% Left margin for the white area
+\begin{minipage}[t]{0.56\textwidth}
+\setlength{\parskip}{0.8ex}% Adds spaces between paragraphs; use \\ to add new lines without this space. Shrink this amount to fit more data vertically
+\raggedright
+
+\vspace{2ex}
+
+\headright{Experience}
+
+\textbf{Firmware Engineer I} \dates{June 2023 - Present} \\
+\textit{Advanced Energy Industries, Inc.}
+\begin{itemize}
+    \item Developed C/C++ firmware for high voltage power supplies for semiconductor applications, enabling features such as digital control loops, data collection, communications, and non-volatile settings.
+    \item Collaborated with an international team on a core library including STM32 hardware abstraction, reusable firmware features, and a custom build system with unit testing capabilities.
+    \item Architected a modular, cross-platform Avalonia .NET library to modernize legacy GUIs for internal testing and customer use.
+    \item Created Python tools for automating firmware integration testing on target hardware.
+    \item Wrote, tested, and released customer-requested changes to legacy firmware, complying with copy exact requirements and documentation control.
+    % \item Developed DSP for a capacitance sensing algorithm.
+    % \item Developed an EtherCAT drop-in module.
+\end{itemize}
+
+\textbf{Firmware Engineering Intern} \dates{May 2022 - May 2023} \\
+\textit{Advanced Energy Industries, Inc.}
+\begin{itemize}
+    \item Implemented a major firmware feature to improve reliability of a legacy electrostatic chuck power supply per customer request.
+    \item Created and shipped a WPF GUI to lock/unlock firmware functionality of power supplies sent to international customers, saving \$1M in revenue.
+    \item Coded a touch display demo to help develop modern user interface solutions for future products.
+\end{itemize}
+
+\textbf{Electrical Engineering Intern} \dates{May - August 2021} \\
+\textit{Moog, Inc.}
+\begin{itemize}
+    \item Designed an emergency stop enclosure and its associated cables to be used for an electronics test console.
+    \item Drafted schematic wiring diagrams, enclosure drawings, bills of materials, and enclosure test procedures.
+    \item Performed crucial power and current analysis procedures to prevent unsafe operating conditions.
+\end{itemize}
+
+\headright{Projects}
+\renewcommand{\arraystretch}{1.3} % Increase row height by 20%
+\begin{tabular*}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.22\textwidth} @{\hspace{1em}} >{\raggedright\arraybackslash}p{\dimexpr\textwidth-0.22\textwidth-1em\relax}@{}}
+    RFID Smart Parking & Developed a smart parking system using RFID parking passes and antennas. Each scan updated a live, online map of UB's north campus lot capacities.\\
+    Smart Mirror & Built a Smart Mirror with facial recognition and gesture controls using a Raspberry Pi. \\
+    iOS Sensors App & Created a Swift application for iOS that visualized the user's sensor data along with compass and level features.\\
+    FPGA Audio Player & Interfaced with the FPGA of a Zybo Z7 development board to take in audio from a microphone and apply distortion and compression effects.\\
+    % Wearable Health Monitor & Developed a self-contained wrist-mounted health monitor to display heart rate, pulse oximetry, and step count using an Arduino Nano.\\
+    % Donkey Kong Embedded Game & Recreated the classic arcade game Donkey Kong using C code running on an embedded Xilinx Zybo Z7 development board and an LCD display.\\
+    % WiFi LED String Lights & Utilized the Blynk IoT platform to control a string of 200 individually addressable RGB lights with a NodeMCU ESP-12E Module.\\
+\end{tabular*}
+
+\end{minipage}
+
+\end{document}

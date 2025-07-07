@@ -1,0 +1,81 @@
+Contact:
+  Name: Daniel Pardo
+  Title: Embedded Software Engineer
+  Location: Buffalo, NY
+  Email: dpardo25@proton.me
+  Phone: +1-716-263-3350
+  Linkedin: danielpardo716
+  Github: danielpardo716
+Education:
+  - Degree: Masters of Science
+    Major: Electrical Engineering
+    Institution: SUNY University at Buffalo
+    Start: August 2022
+    End: May 2023
+    Highlights:
+    - 'GPA: 4.0'
+  - Degree: Bachelors of Science
+    Major: Electrical Engineering
+    Institution: SUNY University at Buffalo
+    Start: August 2018
+    End: May 2022
+    Highlights:
+      - 'GPA: 3.9'
+      - Treasurer, UBRobotics
+      - Scholar, UB Honors College
+      - Dean's List, Spring 2019 - Fall-2021
+Experience:
+  - Title: Firmware Engineer I
+    Company: Advanced Energy Industries, Inc.
+    Start: June 2023
+    End: Present
+    Responsibilities:
+      - Developed C/C++ firmware for high voltage power supplies for semiconductor applications, enabling features such as digital control loops, data collection, communications, and non-volatile settings.
+      - Collaborated with an international team on a core library including STM32 hardware abstraction, reusable firmware features, and a custom build system with unit testing capabilities.
+      - Architected a modular, cross-platform Avalonia .NET library to modernize legacy GUIs for internal testing and customer use.
+      - Created Python tools for automating firmware integration testing on target hardware.
+      - Wrote, tested, and released customer-requested changes to legacy firmware, complying with copy exact requirements and documentation control.
+      - Developed DSP for a capacitance sensing algorithm.
+      - Developed an EtherCAT drop-in module.
+  - Title: Firmware Engineering Intern
+    Company: Advanced Energy Industries, Inc.
+    Start: May 2022
+    End: May 2023
+    Responsibilities:
+      - Implemented a major firmware feature to improve reliability of a legacy electrostatic chuck power supply per customer request.
+      - Created and shipped a WPF GUI to lock/unlock firmware functionality of power supplies sent to international customers, saving \$1M in revenue.
+      - Coded a touch display demo to help develop modern user interface solutions for future products.
+  - Title: Electrical Engineering Intern
+    Company: Moog, Inc.
+    Start: May 2021
+    End: August 2021
+    Responsibilities:
+      - Designed an emergency stop enclosure and its associated cables to be used for an electronics test console.
+      - Drafted schematic wiring diagrams, enclosure drawings, bills of materials, and enclosure test procedures.
+      - Performed crucial power and current analysis procedures to prevent unsafe operating conditions.
+Skills:
+  - 'Programming Languages: C/C++, C#, Python, MATLAB'
+  - 'Embedded: Serial protocols, FreeRTOS, EtherCAT, unit testing, debugging, soldering'
+  - 'Development: Git, Jira, Linux, Meson, Docker'
+  - 'Soft Skills: Problem solving, communication, teamwork'
+Honors:
+  - Member, Tau Beta Pi
+  - Grace W. Capen Academic Award
+  - George F. Schenk Scholarship
+  - Pride of New York Scholarship
+  - Presidential Scholarship, Engineering Society of Buffalo
+Projects:
+  - Name: RFID Smart Parking
+    Description: Developed a smart parking system using RFID parking passes and antennas. Each scan updated a live, online map of UB's north campus lot capacities.
+  - Name: Smart Mirror
+    Description: Built a Smart Mirror with facial recognition and gesture controls using a Raspberry Pi.
+  - Name: iOS Sensors App
+    Description: Created a Swift application for iOS that visualized the user's sensor data along with compass and level features.
+  - Name: FPGA Audio Player
+    Description: Interfaced with the FPGA of a Zybo Z7 development board to take in audio from a microphone and apply distortion and compression effects.
+  - Name: Wearable Health Monitor
+    Description: Developed a self-contained wrist-mounted health monitor to display heart rate, pulse oximetry, and step count using an Arduino Nano.
+  - Name: Donkey Kong Embedded Game
+    Description: Recreated the classic arcade game Donkey Kong using C code running on an embedded Xilinx Zybo Z7 development board and an LCD display.
+  - Name: WiFi LED String Lights
+    Description: Utilized the Blynk IoT platform to control a string of 200 individually addressable RGB lights with a NodeMCU ESP-12E Module.
