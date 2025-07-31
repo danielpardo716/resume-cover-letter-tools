@@ -1,6 +1,6 @@
-Name: John Smith
-Title: Software Engineer
 Contact:
+  Name: John Smith
+  Title: Software Engineer
   Email: johnsmith@gmail.com
   Phone: +1-234-567-8901
   LinkedIn: https://www.linkedin.com/in/johnsmith
@@ -28,20 +28,26 @@ Experience:
       - Optimized existing codebase for performance improvements.
       - Assisted in debugging and troubleshooting software issues.
 Skills:
-  - Programming Languages: Python, JavaScript, Java
-  - Frameworks: React, Node.js, Django
-  - Tools: Git, Docker, Jenkins
+  - Category: Programming Languages
+    Skills:
+    - Python
+    - JavaScript
+    - Java
+  - Category: Frameworks
+    Skills: 
+    - React
+    - Node.js
+    - Django
+  - Category: Tools
+    Skills:
+    - Git
+    - Docker
+    - Jenkins
 Honors:
-  - Award: Dean's List
-    Institution: University of Technology
-    Year: 2020
-  - Award: Best Project Award
-    Event: Annual Tech Fair
-    Year: 2021
+  - Dean's List, 2020
+  - Best Project Award, Annual Tech Fair 2021
 Projects:
   - Name: Personal Portfolio Website
     Description: Developed a personal portfolio website to showcase projects and skills.
-    Technologies: HTML, CSS, JavaScript
   - Name: Task Management App
     Description: Created a task management application to help users organize their tasks.
-    Technologies: React, Node.js, MongoDB
