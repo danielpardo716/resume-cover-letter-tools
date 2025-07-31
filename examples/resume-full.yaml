@@ -57,10 +57,32 @@ Experience:
       - Drafted schematic wiring diagrams, enclosure drawings, bills of materials, and enclosure test procedures.
       - Performed crucial power and current analysis procedures to prevent unsafe operating conditions.
 Skills:
-  - 'Programming Languages: C/C++, C#, Python, MATLAB'
-  - 'Embedded: Serial protocols, FreeRTOS, EtherCAT, unit testing, debugging, soldering'
-  - 'Development: Git, Jira, Linux, Meson, Docker'
-  - 'Soft Skills: Problem solving, communication, teamwork'
+  - Category: Programming Languages
+    Skills:
+    - C/C++
+    - C#
+    - Python
+    - MATLAB
+  - Category: Embedded
+    Skills:
+    - Serial protocols
+    - FreeRTOS
+    - EtherCAT
+    - Unit Testing
+    - Debugging
+    - Soldering
+  - Category: Development
+    Skills: 
+    - Git
+    - Jira
+    - Linux
+    - Meson
+    - Docker
+  - Category: Soft Skills
+    Skills:
+    - Problem Solving
+    - Communication
+    - Teamwork
 Honors:
   - Member, Tau Beta Pi
   - Grace W. Capen Academic Award

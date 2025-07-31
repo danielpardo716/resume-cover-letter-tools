@@ -24,7 +24,7 @@ EXPERIENCE
 {% endfor %}
 SKILLS
 {%- for skill in Skills %}
-- {{skill}}
+- {{skill.Category}}: {% for skill in skill.Skills %}{{skill}}{%if not loop.last%}, {%endif%}{%endfor%}
 {%- endfor %}
 
 PROJECTS

@@ -106,9 +106,8 @@
 \headleft{Skills}
 \begin{itemize}
 <BLOCK> for skill in Skills </BLOCK>
-    \item <VAR>skill</VAR>
+    \item \textbf{<VAR>skill.Category</VAR>:} <BLOCK> for skill in skill.Skills</BLOCK><VAR>skill|latex_escape</VAR><BLOCK>if not loop.last</BLOCK>, <BLOCK>endif</BLOCK><BLOCK>endfor</BLOCK>
 <BLOCK> endfor </BLOCK>
-% \item \textbf{Languages:} C/C++, C\#, Python, MATLAB
 \end{itemize}
 
 \headleft{Honors}

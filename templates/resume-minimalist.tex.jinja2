@@ -202,12 +202,10 @@
     \vspace{0.2 cm}
     <BLOCK> endfor </BLOCK>
 
-    \vspace{0.2 cm}
-
     \section{Experience}
     <BLOCK> for experience in Experience </BLOCK>
     \begin{twocolentry}{<VAR>experience.Start</VAR> - <VAR>experience.End</VAR>}
-        \textbf{<VAR>experience.Title</VAR>}, <VAR>experience.Company</VAR> - <VAR>experience.Location</VAR>
+        \textbf{<VAR>experience.Title</VAR>}, \textit{<VAR>experience.Company</VAR>} - <VAR>experience.Location</VAR>
     \end{twocolentry}
     \vspace{0.10 cm}
     \begin{onecolentry}
@@ -220,12 +218,10 @@
     \vspace{0.2 cm}
     <BLOCK> endfor </BLOCK>
 
-    \vspace{0.2 cm}
-
     \section{Skills}
     <BLOCK> for skill in Skills </BLOCK>
         \begin{onecolentry}
-            <VAR>skill | latex_escape </VAR>
+            \textbf{<VAR>skill.Category</VAR>:} <BLOCK> for skill in skill.Skills</BLOCK><VAR>skill|latex_escape</VAR><BLOCK>if not loop.last</BLOCK>, <BLOCK>endif</BLOCK><BLOCK>endfor</BLOCK>
         \end{onecolentry}
         \vspace{0.2 cm}
     <BLOCK> endfor </BLOCK>
@@ -233,7 +229,7 @@
     \section{Projects}
     <BLOCK> for project in Projects </BLOCK>
         \begin{onecolentry}
-            <VAR>project.Name</VAR>: <VAR>project.Description</VAR>
+            \textbf{<VAR>project.Name</VAR>:} <VAR>project.Description</VAR>
         \end{onecolentry}
         \vspace{0.2 cm}
     <BLOCK> endfor </BLOCK>
