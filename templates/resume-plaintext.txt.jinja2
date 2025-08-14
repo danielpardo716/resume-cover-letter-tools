@@ -1,0 +1,38 @@
+{{Contact.Name}}
+{{Contact.Title}}
+
+CONTACT
+Location: {{Contact.Location}}
+Email: {{Contact.Email}}
+Phone: {{Contact.Phone}}
+LinkedIn: {{Contact.Linkedin}}
+GitHub: {{Contact.Github}}
+
+EDUCATION
+{%- for education in Education %}
+{{education.Institution}}: {{education.Degree}}, {{education.Major}}, {{education.Start}} - {{education.End}}
+{%- for highlight in education.Highlights %}
+- {{highlight}}
+{%- endfor %}
+{% endfor %}
+EXPERIENCE
+{%- for experience in Experience %}
+{{experience.Title}}, {{experience.Company}}, {{experience.Start}} - {{experience.End}}
+{%- for responsibility in experience.Responsibilities %}
+- {{responsibility}}
+{%- endfor %}
+{% endfor %}
+SKILLS
+{%- for skill in Skills %}
+- {{skill.Category}}: {% for skill in skill.Skills %}{{skill}}{%if not loop.last%}, {%endif%}{%endfor%}
+{%- endfor %}
+
+PROJECTS
+{%- for project in Projects %}
+- {{project.Name}}: {{project.Description}}
+{%- endfor %}
+
+HONORS
+{%- for honor in Honors %}
+- {{honor}}
+{%- endfor %}
