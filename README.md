@@ -20,4 +20,7 @@ The following extensions were used for ease of use:
 - [Better Jinja](https://marketplace.visualstudio.com/items?itemName=samuelcolvin.jinjahtml)
 
 # Usage
-After cloning and making sure dependencies are installed, simply run ```uv run source/main.py```.
+After cloning and making sure dependencies are installed, run ```uv run build.py [document_type] [input_path] [output_path]```, where
+- document_type: resume_plaintext, resume_minimalist, resume_two_column, cover_letter
+- input_path: Path to input .yaml
+- output_path: Path to output .txt/.tex
